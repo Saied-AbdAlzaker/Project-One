@@ -1,0 +1,18 @@
+
+.footer-item
+{
+  background-color: #2C3E50;
+}
+footer a
+{
+  width: 45px;
+  height: 45px;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

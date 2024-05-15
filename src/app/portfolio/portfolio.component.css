@@ -1,0 +1,67 @@
+
+
+.container
+{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item
+{
+  width: calc(100%/3);
+  padding: 10px;
+}
+.item-img
+{
+  overflow: hidden;
+}
+img
+{
+  width: 100%;
+  transition: all .5s;
+}
+.layer
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.item-img:hover .layer
+{
+  opacity: 1;
+  cursor: pointer;
+}
+.item-img:hover img
+{
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+#fixed-box
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+.parent
+{
+  position: relative;
+}
+/*  */
