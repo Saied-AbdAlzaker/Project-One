@@ -1,0 +1,24 @@
+<section class="my-3">
+
+  <app-star [title]="'portfolio'" [customColor]="'#2c3e50'" class="p-5 mt-5"></app-star>
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6" *ngFor="let imgSrc of imgSrc">
+        <div class="overflow-hidden rounded-3 position-relative">
+          <img [src]="imgSrc" alt="" >
+          <div (click)="flag=false; modelImg=imgSrc"
+            class="layer w-100 h-100 position-absolute start-0 top-0 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-plus fa-6x text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [class.d-none]="flag" (click)="hideModel($event.target, img)"
+    class="model__ start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center position-fixed bg-primary bg-opacity-25">
+    <img #img [src]="modelImg" alt="" class="w-50">
+  </div>
+
+</section>

@@ -1,0 +1,22 @@
+img
+{
+  width: 100%;
+  transition: all .5s;
+}
+.layer
+{
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.6s all;
+}
+
+.layer:hover
+{
+  opacity: 1;
+}
+
+.model__{
+  z-index: 9999;
+}

@@ -1,0 +1,14 @@
+<div class="container mx-auto mt-5">
+
+<div class="row my-5">
+  <div class="col-md-3 p-3" *ngFor="let item of pizzaArr">
+    <div class="pizza">
+      <img [src]="item.image_url" alt="" class="w-100">
+      <p class="mt-2">{{item.title.split(' ').slice(0,2).join(' ')}}</p>
+    </div>
+  </div>
+</div>
+
+<h4 class="alert alert-danger my-5 text-center" *ngIf="err">{{err}}</h4>
+
+</div>
